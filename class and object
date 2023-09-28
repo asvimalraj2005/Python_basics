@@ -2,16 +2,16 @@ class one:                                                      # we have create
     def __init__(self,a,b):                                     # we have initialized a constructor by using __init__ dunder method(magic method);passing two passing parameters
         self.a=a                                                # by using self keyword we are creating loop inside in the constructor like assigning values to a,b when creating n of objects
         self.b=b
-    def add(self):                                              # creating a add function 
-        print("The sum is ",self.a+self.b)
+    def add(self):                                              # creating a add function and passing self keyword as an parameter which contains the value of a and value of b
+        print("The sum is ",self.a+self.b)                      # printing the sum of the two variables by concanating the self.a and self.b ,each one contains different values
     def sub(self):
         print("The difference is",self.a-self.b)
     def mul(self):
         print("The product is ",self.a*self.b)
     def div(self):
-        return self.a*self.b
-
-o1=one(5,6)
-o1.add()
-mul_result=o1.mul()
-print(mul_result)
+        return self.a*self.b                                    # we are returning the divident of the two variables 
+                                                                
+o1=one(5,6)                                                     # we are creating an object named as o1 and passing two integer values 
+o1.add()                                                        # we are accessing the methods(functions) inside the class one by using the instance of that same class
+mul_result=o1.mul()                                             # we are storing the value of the return funtion inside class one div method
+print(mul_result)                                               # we are printing stored result by using print function
